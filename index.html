@@ -1,0 +1,613 @@
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Git / GitHub</title>
+    <link
+      rel="stylesheet"
+      href="assets/css/style.css?v=88069b615a7a503a243f4ea590b578c14af4e648"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/theme-dev.css?v=88069b615a7a503a243f4ea590b578c14af4e648"
+    />
+
+    <style>
+      :root {
+        --bootstrap-icons-font: "bootstrap-icons";
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="assets/css/tic-tac.css?v=88069b615a7a503a243f4ea590b578c14af4e648"
+    />
+  </head>
+  <body class="">
+    <header>
+      <div>
+        <h1>Git / GitHub</h1>
+
+        <p>Git Workshop</p>
+      </div>
+    </header>
+
+    <main id="main">
+      <img
+        class="main-image"
+        src="assets/images/squirrels2.jpg"
+        alt="Git / GitHub"
+      />
+
+      <div class="wrapper-tic-tac">
+        <section class="no-background">
+          <h1 id="special-guests-tic-et-tac">Special guests: Tic et Tac</h1>
+          <p>
+            En équipe de 2, suivez les instructions, chaque personne choisissant
+            son rôle ! Colonne de gauche : Tic. Colonne de droite : Tac. Dans
+            cet atelier, vous apprendrez comment collaborer à l’aide de Git et
+            GitHub, comment gérer les conflits de fichiers et comment versionner
+            votre code.
+          </p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic">Tic</h2>
+          <p>
+            Crée un nouveau répertoire vide nommé
+            <code class="language-plaintext highlighter-rouge">my-project</code>
+            sur votre poste de travail. Crée un nouveau repository public vide
+            sur GitHub appelé
+            <code class="language-plaintext highlighter-rouge">my-project</code>
+            sur votre profil. (Pas de génération de README.md !!)
+          </p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac">Tac</h2>
+          <p>Regarde ce que fait Tic et sois attentif.</p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-1">Tic</h2>
+          <p>
+            Dans le nouveau dossier
+            <code class="language-plaintext highlighter-rouge">my-project</code>
+            situé localement sur ton ordinateur, suis les commandes répertoriées
+            sur GitHub dans
+            <strong>…or create a new repository on the command line</strong>.
+          </p>
+          <p class="alert-warning">
+            Assure-toi d’avoir coché l’option SSH, pas HTTPS.
+          </p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-1">Tac</h2>
+          <p>Explique à Tic ce qu’il fait à chaque étape.</p>
+        </section>
+
+        <section class="no-background">
+          <h1 id="ces-commandes">Ces commandes</h1>
+          <p>
+            <img
+              src="/assets/images/printGit.png"
+              alt="Commandes de configuration Git"
+            />
+          </p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-2">Tic</h2>
+          <p>
+            Donne le lien vers le repo à Tac et comprenez ensemble comment le
+            cloner sur son ordinateur.
+          </p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-2">Tac</h2>
+          <p>
+            Clone le repo nouvellement créé de Tic en renommant le répertoire
+            cible local “my-tac”.<br />Attention, utilise&nbsp;:
+          </p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code>git clone url_of_the_new_repository my-tac
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-background">
+          <h1 id="tout-le-monde">Tout le monde</h1>
+          <p class="alert-info">
+            Ouvrez le répertoire du projet dans votre éditeur de code.
+          </p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-3">Tic</h2>
+          <p>Modifie le fichier README.md en tapant&nbsp;:</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code><span class="c"># my-project</span>
+
+Comment installer ce projet ?
+
+Tout ce que nous avons à faire pour l<span class="s1">'instant, c'</span>est de le cloner.
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-3">Tac</h2>
+          <p>Regarde ce que fait Tic et sois attentif.</p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-4">Tic</h2>
+          <p>
+            Crée le fichier
+            <code class="language-plaintext highlighter-rouge"
+              >another_file.html</code
+            >
+            dans le répertoire du projet.<br />
+            Ajoute un commentaire à l’intérieur du fichier&nbsp;:
+          </p>
+          <div class="language-html highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code><span class="c">&lt;!-- tapez votre commentaire ici --&gt;</span>
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-4">Tac</h2>
+          <p>
+            Crée le fichier
+            <code class="language-plaintext highlighter-rouge"
+              >not_same_file.html</code
+            >
+            dans le dossier du projet.<br />
+            Ouvre le fichier et ajoute également un commentaire à l’intérieur,
+            peu importe qu’il soit identique ou différent.
+          </p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-5">Tic</h2>
+          <p>
+            Regarde ce que fait Tac, essaye de comprendre ce qui se passe à
+            chaque étape et quel est le résultat.
+          </p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-5">Tac</h2>
+          <p>
+            Crée le fichier
+            <code class="language-plaintext highlighter-rouge"
+              >secret_file.html</code
+            >
+            contenant&nbsp;:
+          </p>
+          <div class="language-html highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code><span class="c">&lt;!-- Ne doit pas être partagé sur GitHub car c'est le mot de passe que j'utilise
+pour gmail, Facebook, mon ordinateur portable, et si je le pouvais,
+je l'utiliserais pour le code PIN de mon téléphone --&gt;</span>
+</code></pre>
+            </div>
+          </div>
+          <p>Exécute :</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git status
+</code></pre>
+            </div>
+          </div>
+          <p>
+            Ignore le fichier
+            <code class="language-plaintext highlighter-rouge"
+              >secret_file.html</code
+            >
+            en créant un fichier
+            <code class="language-plaintext highlighter-rouge">.gitignore</code>
+            (<a
+              href="https://git-scm.com/docs/gitignore"
+              target="git-documentation"
+              >clique ici</a
+            >
+            pour plus d’informations) et en ajoutant les instructions
+            nécessaires.
+          </p>
+        </section>
+
+        <!-- thx https://css-tricks.com/targetblank/ -->
+
+        <section class="tic">
+          <h2 id="tic-6">Tic</h2>
+          <p>Exécute :</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git status
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-6">Tac</h2>
+          <p>Exécute :</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git status
+</code></pre>
+            </div>
+          </div>
+          <p>
+            Le fichier
+            <code class="language-plaintext highlighter-rouge">.gitignore</code>
+            devrait apparaître.
+          </p>
+        </section>
+
+        <section class="no-background">
+          <h1 id="tout-le-monde-1">Tout le monde</h1>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git add <span class="nb">.</span>
+git status
+git commit <span class="nt">-m</span> <span class="s2">"Change me"</span>
+</code></pre>
+            </div>
+          </div>
+          <p class="alert-info">
+            Remplacez
+            <code class="language-plaintext highlighter-rouge"
+              >"Change me"</code
+            >
+            par un message explicite expliquant ce que vous avez fait. Il n’y a
+            pas de limites, et vous pouvez appuyer sur Entrée tant que vous
+            n’avez pas fermé les guillemets.
+          </p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-7">Tic</h2>
+          <p>Commence par pousser&nbsp;:</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git push
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-7">Tac</h2>
+          <p>Pareil pour toi, <strong>après Tic</strong>&nbsp;:</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git push
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-8">Tic</h2>
+          <p>Tout s’est bien passé pour toi.</p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-8">Tac</h2>
+          <p>Tu as un message d’erreur&nbsp;: que dit le message&nbsp;?</p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-9">Tic</h2>
+          <p>
+            Puisque tu es propriétaire du dépôt, tu dois autoriser Tac à
+            travailler dessus…<br />
+            Accéde à “Settings” &gt; “Collaborators and team” et ajoute Tac en
+            tant que collaborateur.
+          </p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-9">Tac</h2>
+          <p>
+            Tu dois accepter l’invitation que tu as dû recevoir dans ta boîte
+            mail. Essaye ensuite à nouveau de transférer ton commit vers le repo
+            en ligne&nbsp;:
+          </p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git push
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-10">Tic</h2>
+          <p>En tant que “Ranger du risque”, aide Tac.</p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-10">Tac</h2>
+          <p>
+            Tu as un autre message d’erreur&nbsp;! Que dit le message&nbsp;?<br />
+            Trouve la solution sans chercher sur Internet, simplement en lisant
+            le message dans la console.<br />
+          </p>
+          <p class="alert-info">
+            Si tu es vraiment bloqué, appelle ton formateur ou ta formatrice
+            pour obtenir de l’aide&nbsp;!
+          </p>
+          <p>Une fois le problème résolu, tu peux enfin pousser&nbsp;:</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git push
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-background">
+          <h1 id="ensemble">Ensemble</h1>
+          <p class="alert-info">
+            Vérifiez la mise à jour sur GitHub. Le fichier
+            <code class="language-plaintext highlighter-rouge"
+              >secret_file.html</code
+            >
+            est-il là ?
+          </p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-11">Tic</h2>
+          <p>
+            Fais un
+            <code class="language-plaintext highlighter-rouge">git pull</code>
+            pour obtenir les dernières modifications apportées par Tac. <br />
+            Crée ensuite une nouvelle branche à partir de la branche
+            actuelle&nbsp;:
+          </p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git branch tic_branch
+git switch tic_branch
+</code></pre>
+            </div>
+          </div>
+          <p>Ou directement :</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code>git switch <span class="nt">-c</span> tic_branch
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-11">Tac</h2>
+          <p>
+            Suis les mêmes instructions que Tic et créez une nouvelle branche
+            <code class="language-plaintext highlighter-rouge">tac_branch</code
+            >.
+          </p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-12">Tic</h2>
+          <p>
+            Crée un fichier
+            <code class="language-plaintext highlighter-rouge"
+              >same_file.html</code
+            >
+            et saisis un commentaire&nbsp;:
+          </p>
+          <div class="language-html highlighter-rouge">
+            <div class="highlight">
+              <pre
+                class="highlight"
+              ><code><span class="c">&lt;!-- tapez votre commentaire ici --&gt;</span>
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-12">Tac</h2>
+          <p>
+            Crée un fichier
+            <code class="language-plaintext highlighter-rouge"
+              >same_file.html</code
+            >` et tape également un commentaire à l’intérieur, mais pas le même
+            que Tic&nbsp;!
+          </p>
+        </section>
+
+        <section class="no-background">
+          <h1 id="tout-le-monde-2">Tout le monde</h1>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git add <span class="nb">.</span>
+git status
+git commit <span class="nt">-m</span> <span class="s2">"Change me"</span>
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-13">Tic</h2>
+          <p>Publie ta branche sur GitHub en utilisant&nbsp;:</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git push origin tic_branch
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-13">Tac</h2>
+          <p>Publie ta branche sur GitHub en utilisant&nbsp;:</p>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight"><code>git push origin tac_branch
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-14">Tic</h2>
+          <p>
+            Crée une pull request sur GitHub depuis ta branche
+            <code class="language-plaintext highlighter-rouge">tic_branch</code>
+            vers
+            <code class="language-plaintext highlighter-rouge">main</code> (sois
+            prudent avec la direction).
+          </p>
+          <p>
+            Vérifie si “able to merge” s’affiche. Ajoute une description :
+            “Explain what you modified and how to test it”.
+          </p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-14">Tac</h2>
+          <p>
+            Regarde ce que fait Tic et fais de même avec ta branche (<code
+              class="language-plaintext highlighter-rouge"
+              >tac_branch</code
+            >
+            vers <code class="language-plaintext highlighter-rouge">main</code>)
+          </p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-15">Tic</h2>
+          <p>Regarde ce que fait Tac et aide-le si nécessaire.</p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-15">Tac</h2>
+          <p>
+            Va sur GitHub et accéde à ta pull request.<br />
+            Vérifie si tout semble bon, puis clique sur le bouton “Merge pull
+            request”.
+          </p>
+          <p class="alert-info">
+            🥳 Bon travail ! Tu viens de réussir la fusion de ta première
+            branche ! Maintenant, tu peux voir ton travail sur la branche
+            principale.
+          </p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-16">Tic</h2>
+          <p>
+            Suis les mêmes étapes que Tac pour valider ta pull request et
+            pouvoir fusionner ta branche.
+          </p>
+          <p class="alert-warning">
+            Fichtre ! Il y a un conflit ! tu peux voir le message : “This branch
+            has conflicts that must be resolved”.
+          </p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-16">Tac</h2>
+          <p>Regarde ce que fait Tic.</p>
+        </section>
+
+        <section class="no-background">
+          <h1 id="regardez-ça-ensemble">Regardez ça ensemble</h1>
+          <iframe
+            width="560"
+            height="315"
+            style="display: block; margin: auto"
+            src="https://www.youtube.com/embed/JtIX3HJKwfo"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-17">Tic</h2>
+          <p>
+            Au lieu de résoudre les conflits sur GitHub comme indiqué dans la
+            vidéo, fais-le localement dans ton éditeur de code.
+          </p>
+          <p>
+            Sur GitHub, clique sur “command line instructions” comme indiqué
+            dans l’image suivante et suis les instructions. N’oublie pas de
+            faire un
+            <code class="language-plaintext highlighter-rouge">git status</code>
+            entre chaque étape et d’en discuter avec Tac.
+          </p>
+          <p>
+            <img
+              src="/assets/images/printConflicts.png"
+              alt="lien vers les instructions en ligne de commande"
+            />
+          </p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-17">Tac</h2>
+          <p>
+            Regarde ce que fait Tic et aide-le si besoin (une deuxième personne
+            ne sera pas toujours là pour résoudre les conflits avec vous, alors
+            profitez-en !)
+          </p>
+        </section>
+
+        <section class="tic">
+          <h2 id="tic-18">Tic</h2>
+          <p>
+            Maintenant qu’il n’y a plus de conflits, reviens à la pull request
+            sur GitHub, vérifie si tout va bien et clique sur le bouton
+            <code class="language-plaintext highlighter-rouge"
+              >Merge pull request</code
+            >.
+          </p>
+        </section>
+
+        <section class="tac">
+          <h2 id="tac-18">Tac</h2>
+          <p>Regarde ce que fait Tic et aide si nécessaire.</p>
+        </section>
+
+        <section class="no-background">
+          <h1 id="ensemble-1">Ensemble</h1>
+          <p class="alert-info">
+            Vous avez résolu avec succès un conflit de fusion dans une pull
+            request, félicitations&nbsp;! 🥳
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
